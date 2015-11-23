@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Performance of Cultural Restaurants from Yelp Reviews</title>
+  <meta name="description" content="">
+  <meta name="author" content="Davin Kaing">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/RevealJS/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/RevealJS/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Introduction</h2>
+  <ul>
+<li><p>The Yelp datasets consist of many reviews from many businesses, many of which are restaurants. This analysis explores the performance of four ethnic restaurants - Chinese, Greek, Italian, and Mexican restaurants. The objective of this analysis is to explore the performance and review frequencies of these ethnic restaurants over time.</p></li>
+<li><p>This analysis can be useful to both ethnic restaurant owners and Yelp users. For restaurant owners, the results presented in this report can help them understand the ratings and frequencies of reviews over time. In addition, it also provides information about the location of top performing ethnic restaurants.</p></li>
+<li><p>As of the users, the information about the highest ranked cities can be most valuable to food enthusiasts.</p></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>Method and Data</h2>
+  <ul>
+<li><p>The data was processed by extracting and merging the following variables from the review and business datasets: &quot;Review ID&quot;, &quot;Stars&quot;, &quot;Name&quot;, &quot;State&quot;, &quot;Categories&quot;, &quot;City&quot;, &quot;Review Counts&quot;, &quot;Date&quot;, and &quot;Business ID&quot;. </p></li>
+<li><p>The types of restaurant was explored by looking at the categories. From this, the cultural restaurants were determined: Chinese, Greek, Italian, and Mexican restaurants. </p></li>
+<li><p>The performance and review frequency of these restaurants, as well as the cities with the highest ranked restaurants, were determined. </p></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>Results</h2>
+  <p><img src="figure/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Results</h2>
+  <p><img src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Discussion</h2>
+  <p>The above analysis provide useful information about the performance of four ethnic restaurants: Chinese, Greek, Italian, and Mexian restaurants. The months that have the most review for all four restaurants are July and August. For their preformance, Greek restaurants tend to perform better with respect to time, while the performances of the other resturants are decreasing with respect to time. Howevever, the review counts for Greek retaurants increased gradually in comparison to the other restaurants. In addition, it has the lowest number of review counts. As of the top 10 cities and states with the highest ranked restaurants, the ranking of the cities differ according to the types of restaurant. On the other hand, the city and state with the most ethnic restaurants (Chinese, Greek, Italian, and Mexican) are Las Vegas, Nevada.</p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/RevealJS/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/RevealJS/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/RevealJS/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/RevealJS/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/RevealJS/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/RevealJS/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
